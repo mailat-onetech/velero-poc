@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	config, err := clientcmd.BuildConfigFromFlags("", "<kube-config-path>")
+	config, err := clientcmd.BuildConfigFromFlags("", "./kubeconfig.yaml")
 	if err != nil {
 		return
 	}
